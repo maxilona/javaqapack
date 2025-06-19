@@ -14,7 +14,20 @@ public class CountServiceTest {
 
         int actual = service.calculate(income, expenses, threshold);
 
-        int expected = 4;
+        int expected = 3;
+
+        Assertions.assertEquals(expected, actual);
+    }
+    @Test
+    public void testCalcMonths2() {
+        CountService service = new CountService();
+        int income = 100_000;
+        int expenses = 60_000;
+        int threshold = 150_000;
+
+        int actual = service.calculate(income, expenses, threshold);
+
+        int expected = 2;
 
         Assertions.assertEquals(expected, actual);
     }
