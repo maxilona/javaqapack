@@ -4,9 +4,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class CountServiceTest {
+
     @Test
     public void testCalcMonths1() {
-        CountServiceTest service = new CountServiceTest();
+        CountService service = new CountService();
         int income = 10_000;
         int expenses = 3_000;
         int threshold = 20_000;
@@ -18,8 +19,6 @@ public class CountServiceTest {
         Assertions.assertEquals(expected, actual);
     }
 }
-
-
 
 
 
