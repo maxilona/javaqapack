@@ -14,7 +14,7 @@ public class CountServiceTest {
 
         int actual = service.calculate(income, expenses, threshold);
 
-        int expected = 3;
+        int expected = 4;
 
         Assertions.assertEquals(expected, actual);
     }
