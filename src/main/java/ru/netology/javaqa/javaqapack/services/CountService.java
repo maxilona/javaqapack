@@ -13,6 +13,7 @@ public class CountService {
                 count ++;
             } else {
                 money = money + income;
+                money = money - expenses;
             }
         }
         return count;
